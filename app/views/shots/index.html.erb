@@ -1,0 +1,15 @@
+<h1>Index</h1>
+
+<% @shots.each do |shot| %>
+	<ul>
+		<li>
+			<%= shot.title %>
+			<%= shot.description %>
+			<%= shot.link %>
+			<%= link_to "Show", shot_path(shot) %>
+			<%= link_to "Edit", edit_shot_path(shot) %>
+			<%= link_to "Delete", shot_path(shot), method: :delete, data: {confirm: "Are you sure ?"} %>
+		</li>
+	</ul>
+<% end %>
+<%= link_to "New shot", new_shot_path %>
