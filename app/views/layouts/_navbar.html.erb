@@ -1,35 +1,36 @@
 <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
-  <div class="container">
-    <%= link_to shots_path, class: "navbar-brand" do %>
-      <i class="fab fa-dribbble"></i>Shots
-    <% end %>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <%= link_to shots_path, class: "navbar-brand" do %>
+    <i class="fab fa-dribbble"></i>Dribbble Clone
+  <% end %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item">
-            <%= link_to new_shot_path, class: "nav-link btn1" do %>
-              <i class="fa fa-upload"></i>New Shot
-            <% end %>
-          </li>
-          <li class="nav-item">
-            <%= link_to current_user.name, edit_user_registration_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Log out", destroy_user_session_path, class: "nav-link", method: :delete %>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item mr-auto active">
+        <%= link_to "Shots", shots_path, class: "nav-link color-link" %>
+      </li>
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to new_shot_path, class: "nav-link btn1" do %>
+            <i class="fa fa-upload"></i>New Shot
+          <% end %>
+        </li>
+        <li class="nav-item nav-name">
+          <%= link_to current_user.name, edit_user_registration_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Log out", destroy_user_session_path, class: "nav-link", method: :delete %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+        </li>
+      <% end %>
+    </ul>
   </div>
 </nav>
