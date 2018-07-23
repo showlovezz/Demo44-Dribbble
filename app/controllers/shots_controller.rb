@@ -7,11 +7,11 @@ class ShotsController < ApplicationController
 	end
 
 	def new
-		@shot = Shot.new
+		@shot = current_user.shots.build
 	end
 
 	def create
-		@shot = Shot.new(shot_params)
+		@shot = current_user.shots.build(shot_params)
 		if @shot.save
 			redirect_to shots_path, notice: "Shot 已建立。"
 		else
