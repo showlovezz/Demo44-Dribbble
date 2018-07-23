@@ -9,6 +9,21 @@ nav {
 				margin-right: 10px;
 			}
 		}
+		> .collapse {
+			> .navbar-nav {
+				> .nav-item {
+					> .nav-link {
+						> i {
+							margin-right: 10px;
+						}
+					}
+					> .btn1 {
+						background-color: $message;
+						border-radius: 5px;
+					}
+				}
+			}
+		}
 	}
 }
 
