@@ -11,3 +11,12 @@ nav {
 		}
 	}
 }
+
+.alert {
+	border-radius: 0px;
+}
+
+.alert-pink {
+	background-color: $message;
+	color: $text;
+}
