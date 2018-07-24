@@ -41,7 +41,7 @@ class ShotsController < ApplicationController
 	private
 
 	def shot_params
-		params.require(:shot).permit(:title, :description, :link)
+		params.require(:shot).permit(:title, :description, :link, :image)
 	end
 
 	def find_shot
