@@ -1,6 +1,7 @@
 class ShotsController < ApplicationController
 
 	before_action :find_shot, only: [:show, :edit, :update, :destroy]
+	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
 		@shots = Shot.order("created_at DESC")
@@ -45,7 +46,10 @@ class ShotsController < ApplicationController
 	end
 
 	def find_shot
-		@shot = Shot.find(params[:id])
+		@shot = Shot.find_by(id: params[:id])
+		if @shot.blank?
+			redirect_to root_path
+		end
 	end
 
 end
