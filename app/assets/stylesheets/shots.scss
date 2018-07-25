@@ -41,6 +41,7 @@ nav {
 	}
 }
 
+// message
 .alert {
 	border-radius: 0px;
 }
@@ -63,4 +64,10 @@ nav {
 			}
 		}
 	}
+}
+
+// form message
+.alert-persimmon {
+	background-color: $persimmon;
+	color: $white;
 }

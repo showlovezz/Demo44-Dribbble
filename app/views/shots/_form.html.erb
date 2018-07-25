@@ -1,7 +1,7 @@
 <%= form_for @shot do |f| %>
 
 	<% if @shot.errors.any? %>
-	  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+	  <div class="alert alert-persimmon alert-dismissible fade show" role="alert">
 	  	<ul class="mb-0">
 	  		<% @shot.errors.full_messages.each do |msg| %>
 	  			<li><%= msg %></li>
