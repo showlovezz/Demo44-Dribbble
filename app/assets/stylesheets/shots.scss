@@ -2,6 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//basic
+body {
+	background-color: $dark_white;
+}
+
+.btn-pink {
+	background-color: $pink;
+	border-radius: 5px;
+	color: $white;
+}
+
 // navbar
 nav {
 	> .navbar-brand {
@@ -21,10 +32,6 @@ nav {
 				> .nav-link:hover {
 					color: $white;
 				}
-				> .btn1 {
-					background-color: $pink;
-					border-radius: 5px;
-				}
 			}
 			> .nav-name {
 				margin-left: 20px;
@@ -41,4 +48,19 @@ nav {
 .alert-pink {
 	background-color: $pink;
 	color: $white;
+}
+
+// jumbotron
+.jumbotron {
+	background-color: $black;
+	padding: 3rem 2rem;
+	margin-bottom: 0;
+	> .container {
+		> .lead {
+			color: rgba(255, 255, 255, 0.5);
+			> strong {
+				color: $white;
+			}
+		}
+	}
 }

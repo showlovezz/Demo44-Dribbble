@@ -5,6 +5,7 @@ class ShotsController < ApplicationController
 
 	def index
 		@shots = Shot.order("created_at DESC")
+		@jumbotron = true
 	end
 
 	def new
