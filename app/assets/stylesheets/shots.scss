@@ -71,3 +71,37 @@ nav {
 	background-color: $persimmon;
 	color: $white;
 }
+
+// index
+#shots_index {
+	> .container {
+		> .row {
+			> .col-12 {
+				> .card {
+					border-radius: 0px;
+					border: 0px;
+					padding: 10px 10px 5px 10px;
+					text-decoration: none;
+					box-shadow: 4px 4px 12px $dark_blue;
+					> .card-img-top {
+						border-radius: 0px;
+						min-height: 165px;
+					}
+					> .card-body {
+						padding: 0px;
+						margin-top: 5px;
+						> p {
+							margin-bottom: 0px;
+							> i {
+								margin-right: 5px;
+							}
+						}
+						> p + p {
+							margin-left: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

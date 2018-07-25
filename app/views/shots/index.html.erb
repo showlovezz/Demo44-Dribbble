@@ -1,13 +1,20 @@
-<% @shots.each do |shot| %>
-	<ul>
-		<li>
-			<%= shot.title %>
-			<%= shot.description %>
-			<%= shot.link %>
-			<%= link_to "Show", shot_path(shot) %>
-			<%= link_to "Edit", edit_shot_path(shot) %>
-			<%= link_to "Delete", shot_path(shot), method: :delete, data: {confirm: "Are you sure ?"} %>
-		</li>
-	</ul>
-<% end %>
-<%= link_to "New shot", new_shot_path %>
+<section id="shots_index">
+	<div class="container">
+		<div class="row">
+
+			<% @shots.each do |shot| %>
+				<div class="col-12 col-md-3">
+					<%= link_to shot_path(shot), class: "card mt-4" do %>
+					  <%= image_tag shot.image_url, class: "card-img-top" %>
+					  <div class="card-body text-muted d-flex justify-content-end">
+					    <p><i class="fas fa-eye"></i>0</p>
+					    <p><i class="fa fa-comment"></i>0</p>
+					    <p><i class="fa fa-heart"></i>0</p>
+					  </div>
+					<% end %>
+				</div>
+			<% end %>
+
+		</div>
+	</div>
+</section>

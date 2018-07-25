@@ -5,3 +5,6 @@
 <%= @shot.link %>
 
 <%= link_to "Back to index", shots_path %>
+
+<%= link_to "Edit", edit_shot_path(@shot) %>
+<%= link_to "Delete", shot_path(@shot), method: :delete, data: {confirm: "Are you sure ?"} %>
