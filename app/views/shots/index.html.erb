@@ -6,12 +6,17 @@
 				<div class="col-12 col-md-3">
 					<%= link_to shot_path(shot), class: "card mt-4" do %>
 					  <%= image_tag shot.image_url, class: "card-img-top" %>
+					  <div class="content">
+					  	<h6><%= truncate(shot.title, length: 19) %></h6>
+					  	<p class="text-muted"><%= truncate(shot.description, length: 110) %></p>
+					  </div>
 					  <div class="card-body text-muted d-flex justify-content-end">
 					    <p><i class="fas fa-eye"></i>0</p>
 					    <p><i class="fa fa-comment"></i>0</p>
 					    <p><i class="fa fa-heart"></i>0</p>
 					  </div>
 					<% end %>
+					<h6 class="text-center mt-2"><%= shot.user.name %></h6>
 				</div>
 			<% end %>
 

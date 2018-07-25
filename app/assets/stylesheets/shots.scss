@@ -87,6 +87,18 @@ nav {
 						border-radius: 0px;
 						min-height: 165px;
 					}
+					> .content {
+						position: absolute;
+						padding: 10px;
+						opacity: 0;
+						> h6 {
+							margin-bottom: 3px;
+							color: $black;
+						}
+						> p {
+							margin-bottom: 0px;
+						}
+					}
 					> .card-body {
 						padding: 0px;
 						margin-top: 5px;
@@ -99,6 +111,16 @@ nav {
 						> p + p {
 							margin-left: 30px;
 						}
+					}
+				}
+				> .card:hover {
+					> .card-img-top {
+						opacity: 0.1;
+						transition: 0.5s;
+					}
+					> .content {
+						opacity: 1;
+						transition: 0.5s;
 					}
 				}
 			}
