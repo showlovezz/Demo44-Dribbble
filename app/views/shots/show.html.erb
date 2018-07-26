@@ -24,6 +24,10 @@
 						<%= render "comments/comment_show" %>
 						<% if user_signed_in? %>
 							<%= render "comments/comment_form" %>
+						<% else %>
+						<div class="comment_item">
+							<%= link_to 'Log in', new_user_session_path, class: "text_pink" %> to leave a comment.
+						</div>
 						<% end %>
 					</div>
 				</div>

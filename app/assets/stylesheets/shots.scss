@@ -181,6 +181,13 @@ nav {
 							margin-top: 10px;
 							margin-bottom: 10px;
 						}
+						> .comment_item {
+							margin-bottom: 20px;
+							> .text_pink {
+								color: $pink;
+								font-weight: 500;
+							}
+						}
 					}
 				}
 				> .col-md-4 {
