@@ -105,6 +105,7 @@ GEM
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    gravatar_image_tag (1.2.0)
     guard (2.14.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -267,6 +268,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise (~> 4.4, >= 4.4.3)
+  gravatar_image_tag (~> 1.2)
   guard (~> 2.14, >= 2.14.2)
   guard-livereload (~> 2.5)
   jbuilder (~> 2.5)

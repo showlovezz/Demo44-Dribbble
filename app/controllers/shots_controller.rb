@@ -29,7 +29,7 @@ class ShotsController < ApplicationController
 
 	def update
 		if @shot.update(shot_params)
-			redirect_to shots_path, notice: "Shot 已修改。"
+			redirect_to @shot, notice: "Shot 已修改。"
 		else
 			render :edit, alert: "Shot 修改失敗。"
 		end

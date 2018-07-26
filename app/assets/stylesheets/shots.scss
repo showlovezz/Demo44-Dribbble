@@ -127,3 +127,49 @@ nav {
 		}
 	}
 }
+
+// show
+#shots_show {
+	> .container {
+		> .col-12 {
+			> .row {
+				> .col-md-12 {
+					margin-top: 10px;
+					> h1 {
+						margin-bottom: 0px;
+					}
+					> .text-muted {
+						margin-bottom: 20px;
+						> strong:first-child {
+							color: $black;
+							margin-left: 5px;
+							margin-right: 5px;
+						}
+					}
+				}
+				> .col-md-8 {
+					> .show_img {
+						background-color: #fff;
+						padding: 20px;
+						> .img_size {
+							width: 100%;
+						}
+					}
+					> .show_content {
+						margin-top: 20px;
+						padding-left: 5px;
+						padding-right: 5px;
+					}
+				}
+				> .col-md-4 {
+					> .list-group {
+						font-size: 16px;
+						> .list-group-item {
+							background-color: transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+}

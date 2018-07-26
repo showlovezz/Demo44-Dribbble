@@ -36,6 +36,7 @@ gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+gem 'gravatar_image_tag', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
