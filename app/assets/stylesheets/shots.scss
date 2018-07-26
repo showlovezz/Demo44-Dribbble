@@ -169,12 +169,10 @@ nav {
 						> div {
 							margin-bottom: 0px;
 							> p {
-								margin-bottom: 0;
+								margin-bottom: 10px;
 							}
 							> em {
 								color: $gray;
-								margin-top: 10px;
-								display: block;
 							}
 						}
 						> hr {
@@ -183,10 +181,6 @@ nav {
 						}
 						> .comment_item {
 							margin-bottom: 20px;
-							> .text_pink {
-								color: $pink;
-								font-weight: 500;
-							}
 						}
 					}
 				}
@@ -201,4 +195,9 @@ nav {
 			}
 		}
 	}
+}
+
+.text_pink {
+	color: $pink;
+	font-weight: 500;
 }
