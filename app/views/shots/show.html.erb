@@ -17,6 +17,11 @@
 					</div>
 					<div class="show_content">
 						<%= simple_format @shot.description %>
+						<hr>
+					</div>
+					<div class="comment">
+						<h4><%= @shot.comments.count %> Comments</h4>
+						<%= render "comments/comment_input" %>
 					</div>
 				</div>
 
@@ -28,7 +33,7 @@
 					  </li>
 					  <li class="list-group-item d-flex justify-content-between align-items-center">
 					  	<i class="fa fa-comment"> Comment</i>
-					  	<span>0 comments</span>
+					  	<span><%= @shot.comments.count %> comments</span>
 					  </li>
 					  <li class="list-group-item d-flex justify-content-between align-items-center">
 					  	<i class="fas fa-eye"> Views</i>

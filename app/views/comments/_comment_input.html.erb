@@ -1,0 +1,9 @@
+<%= form_for [@shot, @comment] do |f| %>
+	<div class="form-group">
+		<%= f.text_area :content, placeholder: "請留言!", class: "form-control" %>
+	</div>
+
+	<div class="form-group">
+		<%= f.submit class: "btn btn-success btn-sm" %>
+	</div>
+<% end %>
