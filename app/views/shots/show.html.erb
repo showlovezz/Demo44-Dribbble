@@ -35,13 +35,13 @@
 					  	<span>0 views</span>
 					  </li>
 					  <li class="list-group-item">
-					  	<%= link_to "Visit Link", @shot.link, class: "btn btn-info btn-sm btn-block", target: "_blank" %>
+					  	<%= link_to "Visit Link", @shot.link, class: "btn btn-secondary btn-sm btn-block", target: "_blank" %>
 					  </li>
 					  <% if user_signed_in? && (current_user.id == @shot.user.id) %>
 						  <li class="list-group-item text-center">
 						  	<div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-								  <%= link_to "Edit", edit_shot_path(@shot), class: "btn btn-info" %>
-								  <%= link_to "Delete", shot_path(@shot), method: :delete, data: {confirm: "Are you sure ?"}, class: "btn btn-danger" %>
+								  <%= link_to "Edit", edit_shot_path(@shot), class: "btn btn-outline-danger" %>
+								  <%= link_to "Delete", shot_path(@shot), method: :delete, data: {confirm: "Are you sure ?"}, class: "btn btn-outline-danger" %>
 								</div>
 						  </li>
 						<% end %>
