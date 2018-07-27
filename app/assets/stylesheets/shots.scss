@@ -201,3 +201,16 @@ nav {
 	color: $pink;
 	font-weight: 500;
 }
+
+// show like action
+.unlike_shot {
+	color: $pink;
+}
+
+.like_shot {
+	color: $gray;
+}
+
+.like_shot:hover {
+	color: $pink;
+}
