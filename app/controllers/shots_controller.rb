@@ -2,6 +2,7 @@ class ShotsController < ApplicationController
 
 	before_action :find_shot, only: [:show, :edit, :update, :destroy]
 	before_action :authenticate_user!, except: [:index, :show]
+	impressionist actions: [:show], unique: [:impressionable_type, :impressionable_id, :session_hash]
 
 	def index
 		@shots = Shot.order("created_at DESC")

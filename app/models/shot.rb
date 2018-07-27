@@ -4,6 +4,8 @@ class Shot < ApplicationRecord
 	validates :link, presence: true
 
 	mount_uploader :image, PhotoUploader
+
+	is_impressionable
 	
 	belongs_to :user
 	has_many :comments, dependent: :destroy
