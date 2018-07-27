@@ -1,13 +1,11 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="container text-center">
-    <p class="lead">
-    	<strong>What are you working on?</strong>
-    	Share your inspiration and see what's inspiring others.
-    </p>
-    <% if user_signed_in? %>
-    	<%= link_to "New Shot", new_shot_path, class: "btn btn-pink" %>
-    <% else %>
-    	<%= link_to "Log in", new_user_session_path, class: "btn btn-pink" %>
-    <% end %>
+<% if !user_signed_in? %>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <p class="lead">
+        <strong>What are you working on?</strong>
+        Share your inspiration and see what's inspiring others.
+      </p>
+      <%= link_to "Log in", new_user_session_path, class: "btn btn-pink" %>
+    </div>
   </div>
-</div>
+<% end %>
