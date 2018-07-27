@@ -3,7 +3,7 @@
 		<h6><strong><%= comment.user.name %></h6></strong>
 		<p><%= simple_format(comment.content) %></p>
 		<em><%= time_ago_in_words(comment.created_at) %> ago</em>
-		<% if user_signed_in? && (current_user.id == comment.user.id) %>
+		<% if user_signed_in? && (current_user.id == comment.user_id) %>
 			<%= link_to "Delete", shot_comment_path(@shot, comment), method: :delete, class: "text_pink" %>
 		<% end %>
 	</div>
