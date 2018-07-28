@@ -216,3 +216,30 @@ nav {
 .form_center {
 	height: 93vh;
 }
+
+// devise
+.devise {
+	
+}
+
+#section_devise {
+	> .container {
+		> .row {
+			> .col-md-8 {
+				background-color: $white;
+				padding: 50px;
+				margin-top: 50px;
+				border-radius: 15px;
+				.form-group {
+					font-weight: 700;
+					.field {
+						.form-control {
+							background-color: $dark_white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
