@@ -14,11 +14,15 @@
 					    <p><i class="fas fa-eye"></i><%= shot.impressionist_count %></p>
 					    <p><i class="fa fa-comment"></i><%= shot.comments.count %></p>
 					    <p>
-					    	<% if current_user.liked? shot %>
-					    		<i class="fa fa-heart unlike_shot"></i><%= shot.get_likes.size %>
-					    	<% else %>
-					    		<i class="fa fa-heart like_shot"></i><%= shot.get_likes.size %>
-					    	<% end %>
+					    	<% if user_signed_in? %>
+						    	<% if current_user.liked? shot %>
+						    		<i class="fa fa-heart unlike_shot"></i><%= shot.get_likes.size %>
+						    	<% else %>
+						    		<i class="fa fa-heart like_shot"></i><%= shot.get_likes.size %>
+						    	<% end %>
+						    <% else %>
+						    	<i class="fa fa-heart like_shot"></i><%= shot.get_likes.size %>
+						    <% end %>
 					    </p>
 					  </div>
 					<% end %>
