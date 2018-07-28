@@ -249,3 +249,14 @@ nav {
 	background-color: $white;
 	padding: 20px 10px 20px 10px;
 }
+
+.user_edit {
+	margin-top: 100px;
+	background-color: $white;
+	padding: 20px;
+	.form-group {
+		> .form-control {
+			background-color: $dark_white;
+		}
+	}
+}
