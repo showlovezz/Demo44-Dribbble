@@ -7,6 +7,8 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   acts_as_voter
+
+  mount_uploader :avatar, AvatarUploader
   
   has_many :shots, dependent: :destroy
   has_many :comments, dependent: :destroy
