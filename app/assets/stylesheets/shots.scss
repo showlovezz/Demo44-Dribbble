@@ -266,3 +266,25 @@ nav {
 	width: 20px;
 	border-radius: 20px;
 }
+
+// devise edit user
+.edit_user {
+	> .container {
+		> .row {
+			> .col-md-8 {
+				background-color: $white;
+				padding: 10px 50px;
+				margin-top: 20px;
+				border-radius: 15px;
+				.form-group {
+					font-weight: 700;
+					> .field {
+						> .form-control {
+							background-color: $dark_white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
