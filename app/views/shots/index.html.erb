@@ -26,10 +26,20 @@
 					    </p>
 					  </div>
 					<% end %>
-					<h6 class="text-center mt-2"><%= shot.user.name %></h6>
+					<div class="text-center mt-2">
+						<% if shot.user.avatar_url.blank? %>
+              <img src="http://via.placeholder.com/20x20" class= "user_small_image">
+            <% else %>
+              <%= image_tag shot.user.avatar_url, class: "user_small_image" %>
+            <% end %>
+						<p><%= shot.user.name %></p>
+					</div>
+					<!-- <h6 class="text-center mt-2"><%#= shot.user.name %></h6> -->
 				</div>
 			<% end %>
 
 		</div>
 	</div>
 </section>
+
+<!-- current_user.id == @shot.user.id -->

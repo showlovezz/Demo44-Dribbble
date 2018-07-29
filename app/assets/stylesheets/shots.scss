@@ -132,6 +132,15 @@ nav {
 	}
 }
 
+.text-center {
+	> p {
+		display: inline-block;
+		margin-bottom: 0;
+		font-size: 13px;
+		font-weight: 500;
+	}
+}
+
 // show
 #shots_show {
 	> .container {
