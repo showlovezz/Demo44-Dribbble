@@ -38,6 +38,8 @@ gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 gem 'impressionist', '~> 1.6', '>= 1.6.1'
 gem 'acts_as_votable', '~> 0.11.1'
+gem 'fog-aws', '~> 3.0'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
